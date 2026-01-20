@@ -14,24 +14,25 @@ arr.shift()     //remove 0th index
 // console.log(arr.includes(45)) //search 45 in arr boolean check
 
 const newarr=arr
-// console.log(newarr)
+console.log(newarr)
 
 const Newarr=arr.join()///string 
-// console.log(Newarr)
+console.log(Newarr)
+console.log(typeof(Newarr))
 
 
 //slice,splice
 console.log("A",arr)
-const myn1=arr.slice(1,3)
-// console.log(myn1)
-// console.log("B",arr)
+const myn1=arr.slice(1,3)    //myn1=[45, 12 ] , no change in arr 
+console.log(myn1)
+console.log("B",arr)
 
-// const myn2=arr.splice(1,3)
-// console.log("C",arr)
-// console.log(myn2)
-
-// arr.push(myn1)
-// console.log(arr)
+const myn2=arr.splice(1,3)
+console.log("C",arr)          //arr changes to [23, 5, 6, 12 ]
+console.log(myn2)             //myn2=[45, 12, 3]
+                                 
+arr.push(myn1)                
+console.log(arr)
 
 const new1=arr.concat(myn1)
 console.log(new1)

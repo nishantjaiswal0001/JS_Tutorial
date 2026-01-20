@@ -1,8 +1,8 @@
 //  Syntax-> function function_name(parameter){  }
 
-function mynameis(){
-    console.log("Nishant Jaiswal")
-}
+// function mynameis(){
+//     console.log("Nishant Jaiswal")
+// }
 
 // mynameis()
 
@@ -10,38 +10,38 @@ function mynameis(){
 //     console.log(num1+num2)    //this is like void in C++
 // }
 
-// or 
-function addTwo(num1,num2){
-    return num1+num2
-}
+// // or 
+// function addTwo(num1,num2){
+//     return num1+num2
+// }
 
 // addtwo(3,8)
 // console.log(addTwo(3,9))
 
-function loginusermessage(username){
-    if(username===undefined){
-        console.log("Please enter a username")
-        return
-    }
-    return `${username} just logged in`
-}
+// function loginusermessage(username){
+//     if(username===undefined){
+//         console.log("Please enter a username")
+//         // return
+//     }
+//     return `${username} just logged in`
+// }
 
 
 // console.log(loginusermessage())
 // console.log(loginusermessage("NIshant"))
 
 
-function calculateCartPrice(...num1){  //  ... rest operator takes all the arguments
-     return num1
-}
+// function calculateCartPrice(...num1){  //  ... rest operator takes all the arguments
+//      return num1
+// }
 
 // console.log(calculateCartPrice(200,300,100))
 
-function print_n_to_1(n){
-     if(n==0) return
-     console.log(n)
-     print_n_to_1(n-1)
-}
+// function print_n_to_1(n){
+//      if(n==0) return
+//      console.log(n)
+//      print_n_to_1(n-1)
+// }
 
 // print_n_to_1(12)
 
@@ -53,6 +53,21 @@ function print_n_to_1(n){
 // }
 
 // or
-const addtwo=(x,y)=>(x+y)  //in return type use curly bracket else parentheses
+// const addtwo=(x,y)=>(x+y)  //in return type use curly bracket else parentheses
 
-console.log(addtwo(3,9))
+// console.log(addtwo(3,9))
+
+// const print=function(n){
+//     return n+2;
+// }
+// console.log(print(2));
+
+const addthrice=(num)=>(num*3);
+console.log(addthrice(4))
+
+const fib=(n)=>{
+    if(n<=1) return n;
+    else return fib(n-1)+fib(n-2);
+}
+
+console.log(fib(6))

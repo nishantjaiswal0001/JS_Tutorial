@@ -1,24 +1,24 @@
 // // Object literals
 
-// const jsuser={
-//     name: "nishant",
-//     "full name": "nishant jaiswal",
-//     age: 18,
-//     location: "Patna",
-//     email:"nishant.com",
-//     isloggedin:false,
-//     latlogindays:["Monday","Saturday"]
-// }
+const jsuser={
+    name: "nishant",
+    "full name": "nishant jaiswal",
+    age: 18,
+    location: "Patna",
+    email:"nishant.com",
+    isloggedin:false,
+    latlogindays:["Monday","Saturday"]
+}
 
-// // console.log(jsuser.email)  //not a good way
-// // console.log(jsuser["email"])  //a good way
+console.log(jsuser.email)  //not a good way
+console.log(jsuser["email"])  //a good way
 
-// jsuser.email="nianht.com"
-// console.log(jsuser["email"]) 
-// // Object.freeze(jsuser)
-// jsuser.email="nibnght.com"
-// // console.log(jsuser["email"]) 
-// // console.log(jsuser)
+jsuser.email="nianht.com"
+console.log(jsuser["email"]) 
+Object.freeze(jsuser)
+jsuser.email="nibnght.com"
+console.log(jsuser["email"]) 
+console.log(jsuser)
 
 // jsuser.greeting=function(){
 //     console.log(`hello js user ${this.name}`)
@@ -34,7 +34,7 @@
 // tinderuser.name="Sammy"
 // tinderuser.isloggedin=false
 
-// // console.log(tinderuser)
+// console.log(tinderuser)
 // const regularuser={
 //     email: "nishu@gmail.com",
 //     fullname: {
@@ -60,11 +60,11 @@
 
 //Destructure
 
-const course={
-    coursename: "JS in hindi",
-    price: "999",
-    courseinstructor: "Hitesh"
-}
+// const course={
+//     coursename: "JS in hindi",
+//     price: "999",
+//     courseinstructor: "Hitesh"
+// }
 
 // const {courseinstructor}=course
 // console.log(courseinstructor)

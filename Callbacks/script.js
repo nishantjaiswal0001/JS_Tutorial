@@ -18,6 +18,7 @@ function getdata(dataid,getnextdata){
     },2000)
 }
 
+//callback hell
 getdata(1,()=>{
     getdata(2,()=>{
         getdata(3)
