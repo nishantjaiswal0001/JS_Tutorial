@@ -10,51 +10,51 @@ const jsuser={
     latlogindays:["Monday","Saturday"]
 }
 
-console.log(jsuser.email)  //not a good way
-console.log(jsuser["email"])  //a good way
+// console.log(jsuser.email)  //not a good way
+// console.log(jsuser["email"])  //a good way
 
-jsuser.email="nianht.com"
-console.log(jsuser["email"]) 
-Object.freeze(jsuser)
-jsuser.email="nibnght.com"
-console.log(jsuser["email"]) 
-console.log(jsuser)
+// jsuser.email="nianht.com"
+// console.log(jsuser["email"]) 
+// Object.freeze(jsuser)
+// jsuser.email="nibnght.com"
+// console.log(jsuser["email"]) 
+// console.log(jsuser)
 
-// jsuser.greeting=function(){
-//     console.log(`hello js user ${this.name}`)
-// }
+jsuser.greeting=function(){
+    console.log(`hello js user ${this.name}`)
+}
 
-// console.log(jsuser.greeting())
+console.log(jsuser.greeting())
 
 
-//Singleton
-// Object.create
-// const tinderuser={}
-// tinderuser.id="123abcd"
-// tinderuser.name="Sammy"
-// tinderuser.isloggedin=false
+// Singleton
+Object.create
+const tinderuser={}
+tinderuser.id="123abcd"
+tinderuser.name="Sammy"
+tinderuser.isloggedin=false
 
-// console.log(tinderuser)
-// const regularuser={
-//     email: "nishu@gmail.com",
-//     fullname: {
-//         userfullname:{
-//             firstname: "Nishant",
-//             lastname: "Jaiswal"
-//         }
-//     }
-// }
+console.log(tinderuser)
+const regularuser={
+    email: "nishu@gmail.com",
+    fullname: {
+        userfullname:{
+            firstname: "Nishant",
+            lastname: "Jaiswal"
+        }
+    }
+}
 
-// console.log(regularuser.fullname.userfullname.firstname)
-// const obj1={1: "a",2:"b"}
-// const obj2={3: "a",4:"b"}
+console.log(regularuser.fullname.userfullname.firstname)
+const obj1={1: "a",2:"b"}
+const obj2={3: "a",4:"b"}
 
-// const obj3=Object.assign({},obj1,obj2)
-// console.log(obj3)
+const obj3=Object.assign({},obj1,obj2)
+console.log(obj3)
 
-// console.log(Object.keys(tinderuser))
-// console.log(Object.values(tinderuser))
-// console.log(tinderuser.hasOwnProperty("isloggedin"))
+console.log(Object.keys(tinderuser))
+console.log(Object.values(tinderuser))
+console.log(tinderuser.hasOwnProperty("isloggedin"))
 
 
 

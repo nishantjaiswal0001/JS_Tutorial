@@ -16,7 +16,7 @@ arr.shift()     //remove 0th index
 const newarr=arr
 console.log(newarr)
 
-const Newarr=arr.join()///string 
+const Newarr=arr.join()  ///string 
 console.log(Newarr)
 console.log(typeof(Newarr))
 
